@@ -1,0 +1,10 @@
+dependencies {
+    implementation(project(":model"))
+
+    implementation("org.springframework.boot:spring-boot-starter-data-mongodb-reactive")
+    implementation("org.reactivecommons.utils:object-mapper-api:0.1.0")
+    testImplementation("org.reactivecommons.utils:object-mapper:0.1.0")
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-mongodb-reactive', version: '2.7.4'
+    implementation group: 'org.springframework.data', name: 'spring-data-commons', version: '2.7.5'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.7.4'
+}

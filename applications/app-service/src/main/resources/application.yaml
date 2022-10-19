@@ -1,0 +1,26 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: "franceCyclingTour"
+  devtools:
+    add-properties: false
+  h2:
+    console:
+      enabled: true
+      path: "/h2"
+  profiles:
+    include: null
+  data:
+    mongodb:
+      uri: "mongodb+srv://cano:cano123@cluster0.jbor6.mongodb.net/cyclingFranceTour?retryWrites=true&w=majority"
+      database: "cyclingFranceTour"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,prometheus"
+  endpoint:
+    health:
+      probes:
+        enabled: true
